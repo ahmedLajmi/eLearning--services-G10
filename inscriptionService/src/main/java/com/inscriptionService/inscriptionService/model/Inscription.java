@@ -5,7 +5,6 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import javax.persistence.*;
 import java.util.Date;
-import java.util.Objects;
 
 @Data
 @AllArgsConstructor
@@ -16,10 +15,11 @@ public class Inscription {
     @GeneratedValue
     private long idInscription;
     private Date inscriptionDate;
+
     private long idCondidate;
     private long idFormation;
 
-    public Inscription(long idInscription, Date inscriptionDate, long idCondidate, long idFormation) {
+    /*public Inscription(long idInscription, Date inscriptionDate, long idCondidate, long idFormation) {
         this.idInscription = idInscription;
         this.inscriptionDate = inscriptionDate;
         this.idCondidate = idCondidate;
@@ -27,8 +27,8 @@ public class Inscription {
     }
 
     public Inscription() {
-        // empty constructor
-    }
+        // empty constructo
+    }*/
 
 
 
