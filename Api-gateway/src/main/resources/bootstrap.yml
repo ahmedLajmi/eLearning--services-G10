@@ -20,9 +20,9 @@ management:
         include: '*'
 zuul:
   routes:
-    customer:
-      path: /customer/**
-    product:
-      path: /product/**
-    order:
-      path: /order/**
+    formation:
+      path: /formation/**
+    inscription:
+      path: /inscription/**
+    candidate:
+      path: /candidate/**

@@ -1,0 +1,13 @@
+server:
+    port: 8222
+zuul:
+  routes:
+    order:
+      path: /inscription/**
+      serviceId: inscription-service
+    product:
+      path: /candidate/**
+      serviceId: candidate-service
+    customer:
+      path: /formation/**
+      serviceId: formation-service
